@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation, useHistory, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useLocation, useHistory } from 'react-router-dom';
 import styled from 'styled-components';
 import axios from 'axios';
 import FormRow from '../components/FormRow';
@@ -29,7 +29,7 @@ const ResetPasswordForm = () => {
       return;
     }
     try {
-      const { data } = await axios.post('/api/v1/auth/reset-password', {
+      await axios.post('/api/v1/auth/reset-password', {
         password,
         token: query.get('token'),
         email: query.get('email'),

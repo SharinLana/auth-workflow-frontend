@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import styled from 'styled-components';
-import { Link, useHistory, Redirect } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import FormRow from '../components/FormRow';
 import { useGlobalContext } from '../context';
 import useLocalState from '../utils/localState';

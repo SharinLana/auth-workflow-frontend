@@ -16,7 +16,7 @@ const VerifyPage = () => {
   const verifyToken = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.post('/api/v1/auth/verify-email', {
+      await axios.post('/api/v1/auth/verify-email', {
         verificationToken: query.get('token'),
         email: query.get('email'),
       });
@@ -31,6 +31,7 @@ const VerifyPage = () => {
     if (!isLoading) {
       verifyToken();
     }
+    // eslint-disable-next-line
   }, []);
 
   if (loading) {
