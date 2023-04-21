@@ -40,5 +40,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://localhost:5100"
+  "proxy": "https://mern-auth-workflow.onrender.com"
 }
