@@ -34,7 +34,7 @@ function Register() {
 
     try {
       const { data } = await axios.post(
-        `/api/v1/auth/register`,
+        `https://mern-auth-workflow.onrender.com/api/v1/auth/register`,
         registerNewUser
       );
 

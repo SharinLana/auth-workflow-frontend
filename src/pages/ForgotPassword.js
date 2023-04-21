@@ -33,7 +33,7 @@ const ForgotPassword = () => {
       return;
     }
     try {
-      const { data } = await axios.post('/api/v1/auth/forgot-password', {
+      const { data } = await axios.post('https://mern-auth-workflow.onrender.com/api/v1/auth/forgot-password', {
         email,
       });
       showAlert({ text: data.msg, type: 'success' });
